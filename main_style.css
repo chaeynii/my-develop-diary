@@ -1,0 +1,176 @@
+body {
+	margin: 0;
+	font-family: 'IBM Plex Sans KR', sans-serif;
+	background-color: #f0f8ff;
+	color: black;
+}
+
+a {
+	text-decoration: none; /*텍스트 효과 업ㅅ앰*/
+	color: black;
+}
+
+img{
+	max-width:300px;
+}
+
+main{
+	display: flex;
+	/*background-color: #e6e6fa;*/
+	max-width:1000px;
+	justify-content: center; /*콘텐츠를 중앙에 보여줌*/
+	align-items: flex-start; /*박스를 시작점에서부터 배치*/
+	margin: auto;
+}
+
+main.home{
+	padding-top: 3em;
+	font-family: 'Kanit', sans-serif;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#intro0 {
+	list-style: none;
+}
+#intro{
+	padding-left: 1em;
+}
+.intro_screen{
+	display: flex-start;
+	}
+article{
+	justify-content: space-between;
+	/*background-color: #fffacd;*/
+}
+
+section{
+	align-items: center;
+	/*background-color: #add8e6;*/
+}
+aside{
+	float: right;
+	max-width:500px;
+	/*background-color: #6495ed;*/
+}
+.navbar {
+	display: flex; /*모든 아이콘들을 한줄에 보여줌. flex box*/
+	font-family: 'Kanit', sans-serif;
+	justify-content: space-between;/*공간을 사이사ㅣ이 넣어줌*/
+	align-items: center; /*align item을 수직정렬..?*/ 
+	background: white;
+	padding: 8px 12px; /*위 8 양옆 12*/
+}
+
+.nav_logo {
+	font-size: 24px;
+	color: navy;	
+	padding-left: 1.5em;
+}
+.nav_menu {
+	display: flex;
+	list-style: none; /*기호 없앰*/
+	padding-left: 0;
+}
+.nav_menu li{
+	padding: 8px 12px;
+}
+.nav_menu li:hover{
+	background-color: #f0f8ff;
+	border-radius: 4px;
+}
+.nav_icon {
+	color : black;
+	display: flex;
+	padding: 8px 12px; 
+	text-align: center;
+	font-size: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 8px 12px;
+	}
+	
+	.nav_menu {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.nav_icon {
+		justify-content: center;
+		width: 100%;
+	}
+	.screen{
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 8px 12px;
+		justify-content: center;
+	}
+	main{
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.intro_screen{
+		width: 100%;
+		text-align: center;
+		
+	}
+	
+	article{
+		width: 100%;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	section{
+		justify-content: center;
+	}
+}
+
+
+.screen{
+	display:flex;
+}
+.img_sec{
+	/*background-color: #FFFF00;*/
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;}
+.img_sec img {
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+	
+#youtube_sec{
+	flex:none;
+}
+
+#img_src_bg{
+	flex-wrap: wrap;
+	max-width:500%;
+	justify-content:space-between;
+	align-items: center;
+}
+#img_src_bg img{
+	max-width:20%
+}
+
+.about_list{
+	flex-wrap:wrap;
+}
+
+.list_time{
+	list-style: circle;
+}
+.disqus{
+	justify-content: center;
+	padding : 1em;
+}
