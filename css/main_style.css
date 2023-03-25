@@ -29,6 +29,8 @@ main{
 	/* align-items: flex-start; 박스를 시작점에서부터 배치 */
 	margin: auto;
 	height: 100vh;
+	overflow:hidden;
+	position: relative;
 }
 
 main.home{
@@ -45,42 +47,28 @@ main.home{
 }
 
 .bd1 {
-	float: left;
-	margin-left: 200px;
+	margin-left: 50px;
 }
 h2.bd1{
 	font-size: 100px;
-
 	animation: move_txt 5s ease-in forwards;
 }
 
-.bd2{
+.bd2 {
+	display: flex;
+	align-items: center;
+	width: 400px;
+	height: 530px;
 	float: right;
 }
 
-#home_img{
-	width: 500px;
-	height: auto;
+.bd {
+	width: 100%;
+	height: 100%;
 	animation: move 5s ease forwards;
 }
 
-@keyframes move{
-	from{
-		transform: translate(-1000px, 0);
-	} 
-	to{
-		transform: translate(0, 0);
-	}
-}
 
-@keyframes move_txt{
-	from{
-		transform: translate(1000px, 0);
-	} 
-	to{
-		transform: translate(0, 0);
-	}
-}
 
 main.about{
 	/* justify-content: center;
@@ -141,7 +129,11 @@ aside{
 	justify-content: space-between;/*공간을 사이사ㅣ이 넣어줌*/
 	align-items: center; /*align item을 수직정렬..?*/ 
 	background: white;
-	padding: 8px 12px; /*위 8 양옆 12*/
+	padding: 8px 0; /*위 8 양옆 12*/
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 1;
 }
 
 .nav_logo {
@@ -176,6 +168,30 @@ aside{
 	padding: 8px 12px;
 	border-radius: 4px;
 }
+
+/* animation */
+
+@keyframes move{
+	from{
+		transform: translate(-1000px, 0);
+	} 
+	to{
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes move_txt{
+	from{
+		transform: translate(1000px, 0);
+	} 
+	to{
+		transform: translate(0, 0);
+	}
+}
+
+
+
+/* media */
 @media screen and (max-width: 800px) {
 	.navbar {
 		flex-direction: column;

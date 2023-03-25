@@ -27,6 +27,6 @@ let observer = new IntersectionObserver((e)=>{
 })
 
 var bd = document.getElementsByClassName("bd");
+console.log(bd);
 observer.observe(bd[0]);
 observer.observe(bd[1]);
-observer.observe(bd[2]);
