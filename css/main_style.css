@@ -29,15 +29,14 @@ main{
 	/* align-items: flex-start; 박스를 시작점에서부터 배치 */
 	margin: auto;
 	height: 100vh;
-	overflow:hidden;
+	padding-top: 3em;
+	font-family: 'Kanit', sans-serif;
 	position: relative;
+	display: block;
 }
 
 main.home{
-	padding-top: 3em;
-	font-family: 'Kanit', sans-serif;
-	
-	display: block;
+	overflow:hidden;
 }
 
 .bd {
